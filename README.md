@@ -47,7 +47,7 @@ Save the file and refresh the browser to see your changes.
 
 2. Paste it on the line just above `// ADD NEW PROJECT HERE`.
 3. Change the words. Keep `description` to one short sentence.
-4. `subject` must match one of the subject names exactly: `English`, `Filipino`, `Mathematics`, `Science`, `Araling Panlipunan` or `MAPEH`.
+4. `subject` must match one of the subject names exactly: `English`, `Filipino`, `Mathematics`, `Science`, `Araling Panlipunan`, `MAPEH` or `Values Education`.
 5. `learned` is optional. Write `learned: ""` to hide the "What I Learned" box.
 
 Projects appear on the page in the same order as in the list.

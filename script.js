@@ -16,7 +16,7 @@
 // ---------------------------------------------------------------------------
 const student = {
     // CHANGE STUDENT NAME HERE
-    name: "Emma",
+    name: "Kelaiah",
 
     grade: "Grade 1",
 
@@ -26,7 +26,7 @@ const student = {
     // Profile photo. Put the photo in the "images" folder with this name.
     photo: "images/profile.jpg",
 
-    // Shown after "Hi! I'm Emma." at the top of the page.
+    // Shown after "Hi! I'm Kelaiah." at the top of the page.
     intro: "This portfolio shows some of the projects, activities, and things I learned during Grade 1."
 };
 
@@ -43,64 +43,77 @@ const student = {
 // subject     - must match a subject name from the SUBJECTS list below
 // description - ONE short sentence about the project
 // image       - the photo of the project inside the "images" folder
+// moreImages  - (optional) extra photos shown when the project is opened.
+//               Leave it out if there is only one photo.
 // learned     - (optional) one short sentence. Use "" to hide it.
 // ---------------------------------------------------------------------------
 const projects = [
     {
-        title: "My Family Tree",
+        title: "My House Model",
         subject: "Araling Panlipunan",
-        description: "I created a family tree to show the members of my family and how we are related.",
-        image: "images/project-1.jpg",
-        learned: "I learned that family members have different roles and responsibilities."
+        description: "I built a model house with a roof and a ladder using popsicle sticks and cardboard.",
+        image: "images/araling-panlipunan.jpg",
+        learned: "I learned that a home is where a family lives, stays safe, and takes care of each other."
     },
     {
-        title: "My Favorite Animal",
-        subject: "Science",
-        description: "I learned about the characteristics, habitat, and food of my favorite animal.",
-        image: "images/project-2.jpg",
-        learned: "I learned that every animal needs food, water, and a safe home."
-    },
-    {
-        title: "Shapes Around Me",
+        title: "Kelaiah's Store",
         subject: "Mathematics",
-        description: "I identified different shapes and found examples of them in everyday objects.",
-        image: "images/project-3.jpg",
-        learned: "I learned that circles, squares, triangles, and rectangles are all around me."
+        description: "I made a pretend store with prices and answered math questions about buying things.",
+        image: "images/math-2.jpg",
+        moreImages: [
+            { image: "images/math-1.jpg", caption: "Solving a problem on my whiteboard" }
+        ],
+        learned: "I learned how to add, subtract, and compare prices in pesos."
     },
     {
-        title: "My Storybook",
+        title: "Police and the Thief",
         subject: "English",
-        description: "I created a short story and practiced writing complete sentences.",
-        image: "images/project-4.jpg",
-        learned: "I learned that a sentence starts with a capital letter and ends with a period."
+        description: "I wrote my own storybook called \"Police and the Thief.\"",
+        image: "images/english.jpg",
+        moreImages: [
+            { image: "images/english-draft.jpg", caption: "Writing my first draft" }
+        ],
+        learned: "I learned that a story has a beginning, a middle, and an end."
     },
     {
-        title: "Filipino Words",
+        title: "Ang Pusa Kong si Mochi",
         subject: "Filipino",
-        description: "I learned new Filipino words and used them in simple sentences.",
-        image: "images/project-5.jpg",
-        learned: "I learned the Filipino words for things I see at home and in school."
+        description: "I wrote a true story in Filipino about my cat, Mochi.",
+        image: "images/filipino.jpg",
+        moreImages: [
+            { image: "images/filipino-draft.jpg", caption: "Writing my first draft" }
+        ],
+        learned: "I learned how to write simple sentences in Filipino."
     },
     {
-        title: "My Art Project",
+        title: "Solar System Model",
+        subject: "Science",
+        description: "I put together and painted a model of the solar system.",
+        image: "images/science-1.jpg",
+        moreImages: [
+            { image: "images/science-2.jpg", caption: "Painting the planets" }
+        ],
+        learned: "I learned the names of the planets and that they move around the Sun."
+    },
+    {
+        title: "Bottle Shakers",
         subject: "MAPEH",
-        description: "I used different colors and materials to create a creative artwork.",
-        image: "images/project-6.jpg",
-        learned: "I learned that mixing two colors can make a new color."
+        description: "I filled bottles with shells and decorated them to make my own shakers.",
+        image: "images/mapeh.jpg",
+        moreImages: [
+            { image: "images/mapeh-2.jpg", caption: "Decorating my shakers" }
+        ],
+        learned: "I learned that I can make music and keep a beat with things I made myself."
     },
     {
-        title: "Addition Practice",
-        subject: "Mathematics",
-        description: "I practiced adding numbers and solving simple addition problems.",
-        image: "images/project-7.jpg",
-        learned: "I learned how to count on to find the total of two numbers."
-    },
-    {
-        title: "My Community",
-        subject: "Araling Panlipunan",
-        description: "I learned about the people, places, and important things in my community.",
-        image: "images/project-8.jpg",
-        learned: "I learned that community helpers keep our neighborhood safe and clean."
+        title: "My Christian Values",
+        subject: "Values Education",
+        description: "I made a poster about prayer, love, kindness, and respect.",
+        image: "images/values-2.jpg",
+        moreImages: [
+            { image: "images/values-1.jpg", caption: "Gluing the pictures on my poster" }
+        ],
+        learned: "I learned to show kindness and respect to my family and friends."
     },
     // ADD NEW PROJECT HERE
 ];
@@ -147,6 +160,12 @@ const subjects = [
         icon: "🎨",
         color: "lavender",
         description: "I sang, danced, made art, played games, and learned healthy habits."
+    },
+    {
+        name: "Values Education",
+        icon: "🙏",
+        color: "pink",
+        description: "I learned about prayer, love, kindness, and respect."
     }
 ];
 
@@ -190,34 +209,34 @@ const journey = [
 // ---------------------------------------------------------------------------
 const gallery = [
     {
-        image: "images/gallery-1.jpg",
-        alt: "Working on the family tree project at the table",
-        caption: "Making my family tree"
+        image: "images/english-draft.jpg",
+        alt: "Writing the first draft of the Police and the Thief story in a notebook",
+        caption: "Writing my English story"
     },
     {
-        image: "images/gallery-2.jpg",
-        alt: "Reading a picture book during reading time",
-        caption: "Reading time"
+        image: "images/filipino-draft.jpg",
+        alt: "Writing the first draft of the Filipino story about Mochi the cat",
+        caption: "Writing my Filipino story"
     },
     {
-        image: "images/gallery-3.jpg",
-        alt: "Cutting out paper shapes for the math project",
-        caption: "Cutting out shapes for math"
+        image: "images/math-1.jpg",
+        alt: "Solving a subtraction problem on a small whiteboard next to the pretend store",
+        caption: "Solving problems at my store"
     },
     {
-        image: "images/gallery-4.jpg",
-        alt: "Finished artwork made with paint and colored paper",
-        caption: "My finished artwork"
+        image: "images/science-2.jpg",
+        alt: "Painting a planet for the solar system model",
+        caption: "Painting the planets"
     },
     {
-        image: "images/gallery-5.jpg",
-        alt: "Looking at a plant during a science activity",
-        caption: "Learning about plants"
+        image: "images/mapeh-2.jpg",
+        alt: "Decorating bottle shakers with paper shapes",
+        caption: "Decorating my shakers"
     },
     {
-        image: "images/gallery-6.jpg",
-        alt: "Holding a certificate at the end of the school year",
-        caption: "End of the school year"
+        image: "images/values-1.jpg",
+        alt: "Gluing pictures onto the My Christian Values poster",
+        caption: "Making my values poster"
     },
     // ADD GALLERY PHOTO HERE
 ];
@@ -228,7 +247,7 @@ const gallery = [
 // Each line in "message" becomes its own paragraph.
 // ---------------------------------------------------------------------------
 const parentNote = {
-    greeting: "To Emma,",
+    greeting: "To Kelaiah,",
     message: [
         "We are so proud of everything you learned, created, and accomplished during Grade 1.",
         "Keep learning, keep asking questions, and always be curious.",
@@ -374,7 +393,15 @@ const footerCredit = "Made with ❤️ by Mom & Dad";
             const card = make("article", "project-card");
             setTint(card, subject && subject.color);
 
-            card.appendChild(imageFrame(project.image, "Photo of the project: " + project.title));
+            const cardMedia = imageFrame(project.image, "Photo of the project: " + project.title);
+            const photoCount = 1 + (project.moreImages || []).length;
+            if (photoCount > 1) {
+                const badge = make("span", "photo-badge");
+                badge.appendChild(icon("photo"));
+                badge.appendChild(document.createTextNode(photoCount + " photos"));
+                cardMedia.appendChild(badge);
+            }
+            card.appendChild(cardMedia);
 
             const body = make("div", "project-body");
 
@@ -551,9 +578,35 @@ const footerCredit = "Made with ❤️ by Mom & Dad";
         const subject = findSubject(project.subject);
         setTint(projectModal, subject && subject.color);
 
-        $("#modal-media").replaceChildren(
-            imageFrame(project.image, "Photo of the project: " + project.title, { lazy: false })
-        );
+        const photos = [{ image: project.image, caption: "My finished project" }]
+            .concat(project.moreImages || []);
+        const media = $("#modal-media");
+        const showModalPhoto = (photo) => {
+            const alt = "Photo of the project: " + project.title + (photo.caption ? " (" + photo.caption + ")" : "");
+            media.replaceChildren(imageFrame(photo.image, alt, { lazy: false }));
+        };
+        showModalPhoto(photos[0]);
+
+        const thumbs = $("#modal-thumbs");
+        thumbs.replaceChildren();
+        thumbs.hidden = photos.length < 2;
+        if (photos.length > 1) {
+            photos.forEach((photo, photoIndex) => {
+                const thumb = make("button", "modal-thumb");
+                thumb.type = "button";
+                thumb.setAttribute("aria-label", "Show photo: " + (photo.caption || "photo " + (photoIndex + 1)));
+                thumb.setAttribute("aria-pressed", photoIndex === 0 ? "true" : "false");
+                thumb.appendChild(imageFrame(photo.image, "", { lazy: false }));
+                if (photo.caption) thumb.appendChild(make("span", "modal-thumb-caption", photo.caption));
+                thumb.addEventListener("click", () => {
+                    showModalPhoto(photo);
+                    thumbs.querySelectorAll(".modal-thumb").forEach((other) => {
+                        other.setAttribute("aria-pressed", other === thumb ? "true" : "false");
+                    });
+                });
+                thumbs.appendChild(thumb);
+            });
+        }
         $("#modal-subject").textContent = project.subject;
         $("#modal-title").textContent = project.title;
         $("#modal-description").textContent = project.description;
