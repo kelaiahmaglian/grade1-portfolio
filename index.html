@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CHANGE STUDENT NAME HERE and CHANGE SCHOOL YEAR HERE (page title + sharing previews) -->
+    <title>Emma's Grade 1 Learning Portfolio | 2026–2027</title>
+    <meta name="description" content="Emma's Grade 1 learning portfolio: school projects in English, Filipino, Mathematics, Science, Araling Panlipunan, and MAPEH, with what she learned in each one.">
+    <meta name="theme-color" content="#FFFAF3">
+
+    <!-- Open Graph (how the link looks when shared) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Emma's Grade 1 Learning Portfolio | 2026–2027">
+    <meta property="og:description" content="School projects and learning highlights from Grade 1.">
+    <meta property="og:site_name" content="Emma's Grade 1 Learning Portfolio">
+    <!-- Optional sharing image. Must be a full web address once the site is online, e.g.
+    <meta property="og:image" content="https://your-site.pages.dev/images/share.jpg"> -->
+    <meta name="twitter:card" content="summary">
+
+    <!-- PRIVACY OPTION: remove the arrows around the next line to hide the site from search engines -->
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
+    <link rel="stylesheet" href="style.css">
+
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Small icon set used across the page (decorative) -->
+    <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.7 6.3.9-4.55 4.44 1.07 6.26L12 17.2l-5.62 2.95 1.07-6.26L2.9 9.4l6.3-.9z"/></symbol>
+        <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M17 3l4 4L8 20l-5 1 1-5z"/><path d="M14 6l4 4"/></symbol>
+        <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 5c3-1.5 7-1.5 10 1 3-2.5 7-2.5 10-1v14c-3-1.5-7-1.5-10 1-3-2.5-7-2.5-10-1z"/><path d="M12 6v14"/></symbol>
+        <symbol id="i-ruler" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7v4M10 7v3M14 7v4M18 7v3"/></symbol>
+        <symbol id="i-crayon" viewBox="0 0 24 24"><path d="M3 21l1.5-5.5L15 5l4 4L8.5 19.5z"/><path d="M13 7l4 4"/><path d="M15 5l2-2 4 4-2 2"/></symbol>
+        <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
+        <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 21h8M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></symbol>
+        <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+        <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-9-9a4.8 4.8 0 0 1 9-2.6A4.8 4.8 0 0 1 21 11c-2 4.6-9 9-9 9z"/></symbol>
+        <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+        <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+        <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    </svg>
+
+    <!-- ============================== HEADER ============================== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home">
+                <svg class="icon brand-icon" aria-hidden="true"><use href="#i-star"></use></svg>
+                <span><span data-bind="name">Emma</span>'s Portfolio</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+
+            <nav id="site-nav" class="site-nav" aria-label="Main">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#journey">My Journey</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ============================== INTRODUCTION ============================== -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <svg class="icon deco deco-1" aria-hidden="true"><use href="#i-pencil"></use></svg>
+            <svg class="icon deco deco-2" aria-hidden="true"><use href="#i-star"></use></svg>
+            <svg class="icon deco deco-3" aria-hidden="true"><use href="#i-book"></use></svg>
+            <svg class="icon deco deco-4" aria-hidden="true"><use href="#i-ruler"></use></svg>
+
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow">Learning Portfolio</p>
+                    <h1 id="hero-title">Welcome to My <span data-bind="grade">Grade 1</span> Learning Portfolio</h1>
+                    <p class="hero-intro">Hi! I'm <span data-bind="name">Emma</span>. <span data-bind="intro">This portfolio shows some of the projects, activities, and things I learned during Grade 1.</span></p>
+
+                    <dl class="info-list">
+                        <div class="info-item">
+                            <dt>Student Name</dt>
+                            <dd data-bind="name">Emma</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>Grade</dt>
+                            <dd data-bind="grade">Grade 1</dd>
+                        </div>
+                        <div class="info-item">
+                            <dt>School Year</dt>
+                            <dd data-bind="schoolYear">2026–2027</dd>
+                        </div>
+                    </dl>
+
+                    <a class="button" href="#projects">
+                        See my projects
+                        <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
+                    </a>
+                </div>
+
+                <div class="hero-photo" id="profile-photo">
+                    <!-- The profile photo is set in script.js (student.photo) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== MY LEARNING PROJECTS ============================== -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-icon" style="--tint: var(--peach)"><svg class="icon" aria-hidden="true"><use href="#i-pencil"></use></svg></span>
+                    <h2 id="projects-title" tabindex="-1">My Learning Projects</h2>
+                    <p class="section-lead">Here is some of the work I made this year. Click a project to learn more about it.</p>
+                </div>
+
+                <div class="filters" id="project-filters" role="group" aria-label="Show projects by subject"></div>
+                <p class="filter-status" id="filter-status" aria-live="polite"></p>
+
+                <ul class="project-grid" id="project-grid"></ul>
+                <p class="empty-state" id="empty-state" hidden>No projects in this subject yet. Check back soon!</p>
+
+                <noscript><p class="empty-state">Please turn on JavaScript to see the projects.</p></noscript>
+            </div>
+        </section>
+
+        <!-- ============================== PROJECTS BY SUBJECT ============================== -->
+        <section id="subjects" class="section section--tinted" aria-labelledby="subjects-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-icon" style="--tint: var(--lemon)"><svg class="icon" aria-hidden="true"><use href="#i-bulb"></use></svg></span>
+                    <h2 id="subjects-title">What I Learned</h2>
+                    <p class="section-lead">My Grade 1 subjects and the projects I made in each one.</p>
+                </div>
+                <ul class="subject-grid" id="subject-grid"></ul>
+            </div>
+        </section>
+
+        <!-- ============================== ACHIEVEMENTS ============================== -->
+        <section id="achievements" class="section" aria-labelledby="achievements-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-icon" style="--tint: var(--mint)"><svg class="icon" aria-hidden="true"><use href="#i-trophy"></use></svg></span>
+                    <h2 id="achievements-title">My Achievements</h2>
+                </div>
+                <ul class="achievement-grid" id="achievement-grid"></ul>
+            </div>
+        </section>
+
+        <!-- ============================== MY GRADE 1 JOURNEY ============================== -->
+        <section id="journey" class="section section--tinted" aria-labelledby="journey-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-icon" style="--tint: var(--sky)"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg></span>
+                    <h2 id="journey-title">My <span data-bind="grade">Grade 1</span> Journey</h2>
+                </div>
+                <ol class="timeline" id="timeline"></ol>
+            </div>
+        </section>
+
+        <!-- ============================== GALLERY ============================== -->
+        <section id="gallery" class="section" aria-labelledby="gallery-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-icon" style="--tint: var(--lavender)"><svg class="icon" aria-hidden="true"><use href="#i-photo"></use></svg></span>
+                    <h2 id="gallery-title">Gallery</h2>
+                    <p class="section-lead">A few more moments from my year of learning.</p>
+                </div>
+                <ul class="gallery-grid" id="gallery-grid"></ul>
+            </div>
+        </section>
+
+        <!-- ============================== PARENT'S NOTE ============================== -->
+        <section id="note" class="section section--tinted" aria-labelledby="note-title">
+            <div class="container">
+                <article class="note-card">
+                    <svg class="icon note-heart" aria-hidden="true"><use href="#i-heart"></use></svg>
+                    <h2 id="note-title" class="visually-hidden">A Note from Mom &amp; Dad</h2>
+                    <!-- The message is set in script.js (look for: CHANGE PARENT MESSAGE HERE) -->
+                    <div class="note-body" id="note-body"></div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================== FOOTER ============================== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-title"><span data-bind="name">Emma</span>'s <span data-bind="grade">Grade 1</span> Learning Portfolio</p>
+            <p>School Year <span data-bind="schoolYear">2026–2027</span></p>
+            <p class="footer-credit" data-bind="footerCredit">Made with ❤️ by Mom &amp; Dad</p>
+        </div>
+    </footer>
+
+    <!-- ============================== PROJECT DETAILS (modal) ============================== -->
+    <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+        <button class="icon-button modal-close" type="button" data-close aria-label="Close project details">
+            <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+        <div class="modal-scroll">
+            <div class="modal-media" id="modal-media"></div>
+            <div class="modal-body">
+                <p class="subject-pill" id="modal-subject"></p>
+                <h2 class="modal-title" id="modal-title"></h2>
+                <h3 class="modal-label">About the Project</h3>
+                <p id="modal-description"></p>
+                <div class="learned-box" id="modal-learned-box">
+                    <h3 class="modal-label">
+                        <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
+                        What I Learned
+                    </h3>
+                    <p id="modal-learned"></p>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- ============================== GALLERY LIGHTBOX ============================== -->
+    <dialog class="modal lightbox" id="lightbox" aria-label="Photo viewer">
+        <button class="icon-button modal-close" type="button" data-close aria-label="Close photo">
+            <svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+        <figure class="lightbox-figure">
+            <div class="lightbox-media" id="lightbox-media"></div>
+            <figcaption class="lightbox-caption">
+                <span id="lightbox-caption"></span>
+                <span class="lightbox-count" id="lightbox-count"></span>
+            </figcaption>
+        </figure>
+        <button class="icon-button lightbox-nav lightbox-prev" type="button" id="lightbox-prev" aria-label="Previous photo">
+            <svg class="icon" aria-hidden="true"><use href="#i-left"></use></svg>
+        </button>
+        <button class="icon-button lightbox-nav lightbox-next" type="button" id="lightbox-next" aria-label="Next photo">
+            <svg class="icon" aria-hidden="true"><use href="#i-right"></use></svg>
+        </button>
+    </dialog>
+</body>
+</html>

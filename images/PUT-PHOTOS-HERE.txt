@@ -1,0 +1,10 @@
+Put the portfolio photos in this folder.
+
+The website looks for these file names (you can change them in script.js):
+
+  profile.jpg              the student's photo at the top of the page
+  project-1.jpg ... project-8.jpg   one photo for each project
+  gallery-1.jpg ... gallery-6.jpg   extra photos for the Gallery
+
+If a photo is missing, the website shows a neat "Photo coming soon" box instead.
+You can delete this text file once your photos are here.
