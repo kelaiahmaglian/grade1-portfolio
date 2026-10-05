@@ -209,34 +209,44 @@ const journey = [
 // ---------------------------------------------------------------------------
 const gallery = [
     {
-        image: "images/english-draft.jpg",
-        alt: "Writing the first draft of the Police and the Thief story in a notebook",
-        caption: "Writing my English story"
+        image: "images/actual-english.jpg",
+        alt: "Writing answers to reading questions in an English worksheet",
+        caption: "English: Answering reading questions"
     },
     {
-        image: "images/filipino-draft.jpg",
-        alt: "Writing the first draft of the Filipino story about Mochi the cat",
-        caption: "Writing my Filipino story"
+        image: "images/actual-math.jpg",
+        alt: "Writing the numbers that come between in a math book",
+        caption: "Math: Numbers that come between"
     },
     {
-        image: "images/math-1.jpg",
-        alt: "Solving a subtraction problem on a small whiteboard next to the pretend store",
-        caption: "Solving problems at my store"
+        image: "images/actual-math-1.jpg",
+        alt: "Answering a math worksheet about skip counting and ordinal numbers",
+        caption: "Math: Skip counting and ordinal numbers"
     },
     {
-        image: "images/science-2.jpg",
-        alt: "Painting a planet for the solar system model",
-        caption: "Painting the planets"
+        image: "images/actual-science.jpg",
+        alt: "Holding a Moon model next to a globe in the sunlight",
+        caption: "Science: The Sun, Earth, and Moon"
     },
     {
-        image: "images/mapeh-2.jpg",
-        alt: "Decorating bottle shakers with paper shapes",
-        caption: "Decorating my shakers"
+        image: "images/actual-science-1.jpg",
+        alt: "Using a magnifying glass to focus sunlight on the ground",
+        caption: "Science: Focusing sunlight with a magnifying glass"
     },
     {
-        image: "images/values-1.jpg",
-        alt: "Gluing pictures onto the My Christian Values poster",
-        caption: "Making my values poster"
+        image: "images/actual-mapeh.jpg",
+        alt: "Playing Row, Row, Row Your Boat on a keyboard from a music book",
+        caption: "MAPEH: Playing \"Row, Row, Row Your Boat\""
+    },
+    {
+        image: "images/actual-values.jpg",
+        alt: "Writing answers about King Josiah in a Bible lesson worksheet",
+        caption: "Values: Learning about King Josiah"
+    },
+    {
+        image: "images/actual-values-1.jpg",
+        alt: "Writing Bible verses on a small whiteboard during Bible study",
+        caption: "Values: Writing Bible verses"
     },
     // ADD GALLERY PHOTO HERE
 ];
