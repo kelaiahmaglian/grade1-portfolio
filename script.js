@@ -170,35 +170,6 @@ const subjects = [
 ];
 
 
-// ---------------------------------------------------------------------------
-// MY ACHIEVEMENTS
-// To add one, copy a line and change the icon and words.
-// ---------------------------------------------------------------------------
-const achievements = [
-    { icon: "⭐", title: "Completed Grade 1 Projects" },
-    { icon: "📚", title: "Improved Reading Skills" },
-    { icon: "🎨", title: "Completed Creative Activities" },
-    { icon: "🧮", title: "Practiced Math Skills" },
-    { icon: "🏆", title: "Participated in School Activities" }
-];
-
-
-// ---------------------------------------------------------------------------
-// MY GRADE 1 JOURNEY (keep each one short)
-// ---------------------------------------------------------------------------
-const journey = [
-    { month: "June", text: "Started Grade 1" },
-    { month: "July", text: "Learned new routines" },
-    { month: "August", text: "Completed new projects" },
-    { month: "September", text: "Discovered new skills" },
-    { month: "October", text: "Created more school activities" },
-    { month: "November", text: "Continued learning" },
-    { month: "December", text: "Celebrated my progress" },
-    { month: "January", text: "Started new lessons" },
-    { month: "February", text: "Completed more projects" },
-    { month: "March", text: "Finished Grade 1" }
-];
-
 
 // ---------------------------------------------------------------------------
 // GALLERY (extra photos of school activities and learning moments)
@@ -515,34 +486,7 @@ const footerCredit = "Made with ❤️ by Mom & Dad";
         });
     }
 
-    /* ---------- Achievements, journey, note ---------- */
-
-    function renderAchievements() {
-        const grid = $("#achievement-grid");
-        achievements.forEach((achievement, index) => {
-            const item = make("li", "reveal");
-            item.style.setProperty("--delay", (index % 5) * 70 + "ms");
-            const card = make("div", "achievement-card");
-            setTint(card, TINTS[index % TINTS.length]);
-            const emoji = make("span", "achievement-emoji", achievement.icon);
-            emoji.setAttribute("aria-hidden", "true");
-            card.append(emoji, make("h3", "", achievement.title));
-            item.appendChild(card);
-            grid.appendChild(item);
-        });
-    }
-
-    function renderJourney() {
-        const list = $("#timeline");
-        journey.forEach((step, index) => {
-            const item = make("li", "timeline-item reveal");
-            setTint(item, TINTS[index % TINTS.length]);
-            const card = make("div", "timeline-card");
-            card.append(make("span", "timeline-month", step.month), make("span", "timeline-text", step.text));
-            item.appendChild(card);
-            list.appendChild(item);
-        });
-    }
+    /* ---------- Parent's note ---------- */
 
     function renderNote() {
         const body = $("#note-body");
@@ -760,8 +704,6 @@ const footerCredit = "Made with ❤️ by Mom & Dad";
     renderProjects();
     applyFilter("All");
     renderSubjects();
-    renderAchievements();
-    renderJourney();
     renderGallery();
     renderNote();
     setupDialog(projectModal);
