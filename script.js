@@ -129,43 +129,43 @@ const subjects = [
         name: "English",
         icon: "📖",
         color: "sky",
-        description: "I practiced reading, phonics, spelling, and writing simple sentences."
+        description: "I learned about nouns, singular and plural nouns, and verbs. I practiced reading and writing simple sentences."
     },
     {
         name: "Filipino",
         icon: "✏️",
         color: "pink",
-        description: "I learned to read, write, and say simple Filipino words and sentences."
+        description: "Natutuhan ko ang tungkol sa pangngalan, paggamit ng \"ang\" at \"ang mga,\" at mga panghalip tulad ng \"ako\" at \"ikaw.\""
     },
     {
         name: "Mathematics",
         icon: "🧮",
         color: "lemon",
-        description: "I practiced numbers, addition, subtraction, shapes, and measurement."
+        description: "I learned how to complete patterns, compare and arrange numbers, and identify centavo and peso coins and bills. I can use what I learned in real life when counting money, buying things, and knowing the order of things."
     },
     {
         name: "Science",
         icon: "🔬",
         color: "mint",
-        description: "I explored animals, plants, my body, and the world around me."
+        description: "I learned about astronomy, the Sun, and the Moon. I learned how they are part of our sky and how they help us understand day, night, and the world around us."
     },
     {
         name: "Araling Panlipunan",
         icon: "🏡",
         color: "peach",
-        description: "I learned about myself, my family, my school, and my community."
+        description: "Natutuhan ko ang iba't ibang interes o hilig ng tao. Natuklasan ko na ang hilig ko ay ang umawit, gumuhit, at magpinta."
     },
     {
         name: "MAPEH",
         icon: "🎨",
         color: "lavender",
-        description: "I sang, danced, made art, played games, and learned healthy habits."
+        description: "I learned about different animal and object sounds."
     },
     {
         name: "Values Education",
         icon: "🙏",
         color: "pink",
-        description: "I learned about prayer, love, kindness, and respect."
+        description: "I learned that the Bible is God's Word and that He created me to be special. It teaches me to obey and love God, my Creator."
     }
 ];
 
